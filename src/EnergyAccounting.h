@@ -41,6 +41,7 @@ public:
     bool load();
     bool save();
 
+    double getDifferentialMargin();
     double getUseThisHour();
     double getUseToday();
     double getUseThisMonth();
