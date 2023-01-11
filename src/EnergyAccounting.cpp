@@ -159,8 +159,8 @@ void EnergyAccounting::calcDayCost() {
 double EnergyAccounting::getDifferentialMargin() {
     float differential = EnergyAccounting::getMonthMax() - use;
     int secondsleft = 3600 - time(nullptr) % 3600;
-    float differentialmargin = differential * 3600 / secondsleft; 
-    return differentialmargin;
+    differential = differential * 3.6 / secondsleft; 
+    return differential;
 }
 
 

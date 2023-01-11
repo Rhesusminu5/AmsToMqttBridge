@@ -771,6 +771,7 @@ void AmsWebServer::dataJson() {
 		price == ENTSOE_NO_VALUE ? PSTR("null") : String(price, 2).c_str(),
 		meterState->getMeterType(),
 		meterConfig->distributionSystem,
+		ea->getDifferentialMargin(),
 		ea->getMonthMax(),
 		peaks.c_str(),
 		ea->getCurrentThreshold(),
